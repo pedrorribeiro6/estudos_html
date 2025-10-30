@@ -1,0 +1,74 @@
+/* Resetando os valores de espaçamento do navegador */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilização de todas as tags h4 abaixo */
+h4 {
+    font-size: 32px;
+    color: #ffffff;
+    background-color: rgb(80, 70, 70);
+    border: red 2px solid;
+    /* Fizemos uma borda de 2px reta e vermelha */
+    font-family: sans-serif;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* Estilizando a nav da classe menu */
+
+.menu {
+    /* background-size: cover;
+    display: block; */
+    width: 100%;
+    background-color: #2b1010;
+    height: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* Deixamos a ocupando toda tela, colocamos uma fonte para as letras
+    e colocamos sua altura e cores */
+}
+
+.menu ul {
+    list-style: none;
+    position: relative;
+}
+
+.menu ul li {
+    width: 200px;
+    float: left;
+}
+
+.menu a {
+    padding: 20px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background-color: #2b1010;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+}
+
+.menu ul ul {
+    position: absolute;
+    visibility: hidden;
+}
+
+.menu ul li:hover ul {
+    visibility: visible;
+}
+
+.menu a:hover {
+    background-color: #862175;
+    color: yellowgreen;
+
+}
+
+.menu ul ul li{
+    float: none;
+    border-bottom: solid 1px #ccc;
+}
+/* Finalizamos todo o css deixando visiveis as opções de escolha no menu */
