@@ -24,7 +24,7 @@
             /* Ele será relativo e ficará no mesmo bloco */
         }
 
-        .dropdown-conteudo{
+        .dropdown-conteudo {
             display: none;
             position: absolute;
             background-color: #f9f9f9;
@@ -32,6 +32,30 @@
             /* Definição da largura mínima */
             box-shadow: 0 8px 16px 0 rgb(from 0, 0, 0, 0.2);
             z-index: 1;
+        }
+
+        .dropdown-conteudo a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            /* 'Display:block'Faz o link ocupar toda a largura disponível(é clicavel em toda linha ) */
+            display: block;
+        }
+
+        .dropdown-conteudo a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-conteudo{
+            /* Quando o usuário passa o mouse sobre o elemento classe .dropdown o conteúdo */
+            /* oculto é exibido */
+            /*  */
+            display: block;
+        } 
+
+        .dropdown:hover .dropbtn{
+            /* muda a cor do botão principal quando o menu está sendo exibido */
+            background-color: #3e8e41;
         }
     </style>
 </head>
